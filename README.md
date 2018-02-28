@@ -5,7 +5,9 @@ jdk какой-то (последней) версии, прописать в PAT
 
 ## Создание проекта
 Создать проект из архитипа с помощью maven:
-`mvn archetype:generate -DarchetypeGroupId=ru.stqa.selenium -DarchetypeArtifactId=webdriver-testng-archetype -DarchetypeVersion=2.0 -DgroupId=com.example -DartifactId=my_example_project`
+```
+mvn archetype:generate -DarchetypeGroupId=ru.stqa.selenium -DarchetypeArtifactId=webdriver-testng-archetype -DarchetypeVersion=2.0 -DgroupId=com.example -DartifactId=my_example_project
+```
 [источник](https://selenium2.ru/articles/117-maven-selenium-archetypes.html)
 
 Сконфигурировать IDE: 
@@ -17,8 +19,10 @@ Settings >>> «Build, Execution, Deployment» -> «Compiler» -> «Java Compiler
 
 # Простейший тест
 Размещение кода тестов и пэйджей: 
+```
 src/test/java/<groupId>/pages
 src/test/java/<groupId>/tests
+```
 
 Основноые оптимизации: 
 1. Использование page-object паттерна (совместно с PageFactory)
